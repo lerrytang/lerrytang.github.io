@@ -4,7 +4,88 @@
     <title>Yujin Tang</title>
   </head>
   <body>
-    <h1>Hello, I'm Yujin</h1>
-    <p>I’m an AI researcher. This is my personal site.</p>
+    <!-- Section 1: Brief Self-Introduction -->
+    <section id="introduction">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 40px; max-width: 800px; margin: 30px auto; padding: 0 20px;">
+        <div style="flex-shrink: 0;">
+          <img src="images/profile_photo.jpg" alt="Yujin Tang" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div style="text-align: left;">
+          <h1 style="margin: 0 0 10px 0; color: #333;">Yujin Tang (湯 聿津)</h1>
+          <p style="margin: 10px 0 10px 0; color: #555; line-height: 1.6;">
+            I'm a research scientist at <a href="https://sakana.ai/" target="_blank" style="color: #007bff; text-decoration: none;">Sakana AI</a>. 
+            Before that, I was a research scientist at <a href="https://www.deepmind.com/" target="_blank" style="color: #007bff; text-decoration: none;">DeepMind</a> (formerly <a href="https://research.google/teams/brain/" target="_blank" style="color: #007bff; text-decoration: none;">Google Brain</a>) based in Tokyo.  
+            I received my PhD in Computer Science from the University of Tokyo, my M.S. from Waseda University, and my B.S. from Shanghai Jiao Tong University.
+            My research interests are in reinforcement learning, robotics, and evolutionary algorithms.
+          </p>
+          <div style="margin: 15px 0 0 0;">
+            <a href="https://scholar.google.com/citations?user=3czUzRYAAAAJ&hl=en" target="_blank" style="color: #007bff; text-decoration: none; margin-right: 20px; font-size: 20px;">
+              <img src="images/icons/gscholar.webp" alt="Google Scholar" style="width: 28px; height: 28px; vertical-align: middle;">
+            </a>
+            <a href="https://www.linkedin.com/in/yujin-tang-98b3ab5a/" target="_blank" style="color: #007bff; text-decoration: none; margin-right: 15px; font-size: 20px;">
+              <img src="images/icons/linkedin.avif" alt="LinkedIn" style="width: 30px; height: 30px; vertical-align: middle;">
+            </a>
+            <a href="https://x.com/yujin_tang?lang=en" target="_blank" style="color: #007bff; text-decoration: none; font-size: 20px;">
+              <img src="images/icons/tweet.webp" alt="X" style="width: 42px; height: 42px; vertical-align: middle;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: News -->
+    <section id="news">
+      <div style="max-width: 800px; margin: 30px auto; padding: 0 20px; display: flex; flex-direction: column; align-items: center;">
+        <h2 style="text-align: center; margin-bottom: 20px;">News</h2>
+        <ul style="text-align: left; list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 10px; text-align: left;">2025-06-21: I gave a keynote talk at <a href="https://sites.google.com/view/mlarchsys/isca-2025/keynote-talks?authuser=0" target="_blank" style="color: #007bff; text-decoration: none;">MLArchSys 2025</a> (<a href="https://docs.google.com/presentation/d/1wLVNcpeF-cjLH4TPXLy0mEHZU9yWXgon3TZ6q5-t8kE/edit?usp=sharing" target="_blank" style="color: #007bff; text-decoration: none;">slides</a>).</li>
+          <li style="margin-bottom: 10px; text-align: left;">2025-05-23: Our research work Transformer-Squared is featured in <a href="https://www.forbes.com/sites/robtoews/2025/03/23/the-gaping-hole-in-todays-ai-capabilities-1/" target="_blank" style="color: #007bff; text-decoration: none;">Forbes</a>.</li>
+          <li style="margin-bottom: 10px; text-align: left;">2025-01-25: Our model merging paper is accepted to <a href="https://www.nature.com/articles/s42256-024-00975-8" target="_blank" style="color: #007bff; text-decoration: none;">Nature Machine Intelligence</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 3: Research Papers -->
+    <section id="research-papers">
+      <div style="max-width: 800px; margin: 30px auto; padding: 0 20px; display: flex; flex-direction: column; align-items: center;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Recent Publications</h2>
+        
+        <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 15px; max-width: 800px;">
+          <div style="flex-shrink: 0;">
+            <img src="images/publications/l2d.png" alt="L2D" style="width: 240px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          </div>
+          <div style="flex: 1;">
+            <h3 style="margin: 0 0 10px 0; color: #333;"><a href="https://arxiv.org/abs/2501.15781" target="_blank" style="color: #007bff; text-decoration: none;">Large Language Models to Diffusion Finetuning</a> [ICML 2025]</h3>
+            <p style="margin: 0; color: #555; line-height: 1.6;">
+              We introduce a finetuning method that enables large language models to scale test-time compute using the diffusion framework. Accuracy improves with more diffusion steps, and the model can adaptively allocate compute via ODE solvers and guided generation. Our method applies to any cross-entropy–trained model without altering original weights, complements standard finetuning and search, and bridges autoregressive and diffusion paradigms.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 15px; max-width: 800px;">
+          <div style="flex-shrink: 0;">
+            <img src="images/publications/tr2.png" alt="Transformer2" style="width: 240px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          </div>
+          <div style="flex: 1;">
+            <h3 style="margin: 0 0 10px 0; color: #333;"><a href="https://arxiv.org/abs/2501.06252" target="_blank" style="color: #007bff; text-decoration: none;">Transformer²: Self-Adaptive LLMs</a> [ICLR 2025]</h3>
+            <p style="margin: 0; color: #555; line-height: 1.6;">
+              We present Transformer², a self-adaptive framework that enables large language models to handle unseen tasks in real time by adjusting only the singular components of their weight matrices. Using a two-pass inference process with a task dispatcher and RL-trained expert vectors, Transformer² outperforms methods like LoRA with fewer parameters and greater efficiency. It generalizes across architectures and modalities, offering a scalable path toward dynamic, self-organizing AI systems.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 15px; max-width: 800px;">
+          <div style="flex-shrink: 0;">
+            <img src="images/publications/cycleqd.png" alt="CycleQD" style="width: 240px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          </div>
+          <div style="flex: 1;">
+            <h3 style="margin: 0 0 10px 0; color: #333;"><a href="https://arxiv.org/abs/2410.14735" target="_blank" style="color: #007bff; text-decoration: none;">Agent Skill Acquisition for LLMs via CycleQD</a> [ICLR 2025]</h3>
+            <p style="margin: 0; color: #555; line-height: 1.6;">
+              We introduce CycleQD, a skill-focused training method for language models that applies Quality Diversity with cyclic task adaptation, model merging–based crossover, and SVD-based mutation. By rotating the focus across tasks, CycleQD avoids data imbalance issues and simplifies objective design. Applied to LLAMA3-8B-INSTRUCT, it outperforms traditional fine-tuning on coding, OS, and database tasks, matching GPT-3.5-Turbo’s performance while preserving strong language abilities. The method is general and extends beyond language to domains like image segmentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
